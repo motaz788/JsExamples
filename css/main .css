@@ -1,0 +1,35 @@
+
+
+.container{
+    width: 90%;
+    margin: 40px auto;
+
+
+
+
+
+
+}
+.accordion{
+    width: 100%;
+    padding: 40px auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid gray;
+}
+.accordion::after{
+    content: "+";
+    font-size: 19px;
+    float: right;
+
+}
+
+.desc{
+    padding: 0px 15px;
+    color: black;
+}
+.none{
+    display: none;
+}
