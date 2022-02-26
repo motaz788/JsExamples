@@ -5,7 +5,13 @@ let desc =document.getElementsByClassName('desc');
 for(let i=0; i<desc.length; i++){
 
     accordion[i].addEventListener('click',function(){
-        desc[i].classList.toggle('none');
+        this.classList.toggle('active');
+
+        if(desc[i].style.height == 0){
+            desc[i].style.height = desc[i].scrollHeight+'px'
+        }else{
+            desc[i].style.height = null;
+        }
     
     })
     

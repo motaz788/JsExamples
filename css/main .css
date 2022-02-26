@@ -1,10 +1,10 @@
-
+body{
+    background-color: azure;
+}
 
 .container{
     width: 90%;
     margin: 40px auto;
-
-
 
 
 
@@ -18,18 +18,23 @@
     padding: 10px;
     text-align: left;
     border: 1px solid gray;
+    cursor: pointer;
 }
 .accordion::after{
-    content: "+";
+    content: "-";
     font-size: 19px;
     float: right;
+
+}
+.active::after{
+    content: '+';
 
 }
 
 .desc{
     padding: 0px 15px;
     color: black;
-}
-.none{
-    display: none;
-}
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
