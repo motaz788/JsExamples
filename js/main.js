@@ -37,3 +37,12 @@ thumbanilimg[i].addEventListener('click',function(){
 
 })
 }
+
+let counter = document.getElementsByClassName('counter');
+
+
+for(let i =0 ; i< counter.length ; i++){ 
+let target = counter[i].getAttribute('data-target');
+counter[i].innerText= target;
+
+}

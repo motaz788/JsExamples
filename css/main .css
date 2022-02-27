@@ -72,3 +72,12 @@ text-align: center;
     transition: all 0.5s;
   }
 
+.fans{
+    margin: 10px;
+    text-align: center;
+    
+}
+.fans i{
+    font-size: 30px;
+    margin: 10px;
+}
