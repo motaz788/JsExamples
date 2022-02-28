@@ -42,7 +42,30 @@ let counter = document.getElementsByClassName('counter');
 
 
 for(let i =0 ; i< counter.length ; i++){ 
-let target = counter[i].getAttribute('data-target');
-counter[i].innerText= target;
+
+    let updateCount =()=>{
+
+            
+let target = +counter[i].getAttribute('data-target');
+let c = +counter[i].innerText;
+
+let speed = target / 100
+
+if (c < target ){
+
+    counter[i].innerText = c + speed ;
+    setTimeout(updateCount , 10)
+}else {
+    c.innerText = target 
+}
+
+
+
+
+
+
+
+    }
+ updateCount();
 
 }
