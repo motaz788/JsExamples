@@ -1,3 +1,4 @@
+
 let accordion =document.getElementsByClassName('accordion');
 let desc =document.getElementsByClassName('desc');
 
@@ -171,7 +172,9 @@ document.addEventListener('click', function(e){
 
 
 
- openBtn.addEventListener('click', openmodelMOvie)
- cancelBtn.addEventListener('click', openmodelMOvie)
- backdrop.addEventListener('click',openmodelMOvie ) 
- addBtn.addEventListener('click', addMovie)
+openBtn.addEventListener('click', openmodelMOvie)
+cancelBtn.addEventListener('click', openmodelMOvie)
+backdrop.addEventListener('click',openmodelMOvie ) 
+addBtn.addEventListener('click', addMovie)
+
+ 
